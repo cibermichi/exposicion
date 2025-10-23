@@ -1,0 +1,117 @@
+:root {
+  --verde: #006400;
+  --verde-claro: #00a86b;
+  --blanco: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background: url('imagenes/arco.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+/* Capa de contenido semitransparente */
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+header {
+  background: black;
+  color: var(--blanco);
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.integrantes h2 {
+  color: var(--verde);
+  border-left: 6px solid var(--verde-claro);
+  padding-left: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.persona {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.persona img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.persona h3 {
+  color: var(--verde);
+  margin-bottom: .3rem;
+}
+
+.introduccion h2,
+.preguntas h2 {
+  color: var(--verde);
+  border-left: 6px solid var(--verde-claro);
+  padding-left: 10px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pregunta {
+  background-color: #fff;
+  border-left: 5px solid var(--verde);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.pregunta strong {
+  color: var(--verde);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--verde);
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 0 0 10px 10px;
+  font-size: 0.9rem;
+}
+
+/* ✅ Responsivo */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  .persona {
+    flex-direction: column;
+    text-align: center;
+  }
+  .persona img {
+    width: 150px;
+    height: 150px;
+  }
+}
