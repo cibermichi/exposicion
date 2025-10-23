@@ -3,74 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css"/>
-  <title>Página solo HTML - Exposición sobre HTML y CSS</title>
+  <title>Exposición sobre HTML y CSS</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <h1>Exposición sobre HTML y CSS</h1>
+  <header>
+    <h1>Exposición sobre HTML y CSS</h1>
+  </header>
 
-  <h2>Integrantes</h2>
+  <main class="contenedor">
 
-  <h3>Fabricio Andrés Zeballos Leigue</h3>
-  <img src="imagenes/fabri.jpg" alt="Foto de Fabricio Andrés Zeballos Leigue" width="180">
-  <p>Estudiante de Ingeniería de Sistemas — Universidad Privada Domingo Savio</p>
+    <section class="integrantes">
+      <h2>Integrantes</h2>
 
-  <h3>Noelia García Cajaerico</h3>
-  <img src="imagenes/noe.jpg" alt="Foto de Noelia García Cajaerico" width="180">
-  <p>Estudiante de Ingeniería de Sistemas — Universidad Privada Domingo Savio</p>
+      <div class="persona">
+        <img src="imagenes/fabri.jpg" alt="Foto de Fabricio Andrés Zeballos Leigue">
+        <div>
+          <h3>Fabricio Andrés Zeballos Leigue</h3>
+          <p>Estudiante de Ingeniería de Sistemas</p>
+          <p>Universidad Privada Domingo Savio</p>
+        </div>
+      </div>
 
-  <h2>Introducción</h2>
-  <p>Esta página está creada únicamente con HTML, sin aplicar hojas de estilo. 
-  Más adelante se añadirá CSS para mejorar su presentación y mostrar la diferencia entre el contenido estructurado y el contenido estilizado.</p>
+      <div class="persona">
+        <img src="imagenes/noe.jpg" alt="Foto de Noelia García Cajaerico">
+        <div>
+          <h3>Noelia García Cajaerico</h3>
+          <p>Estudiante de Ingeniería de Sistemas</p>
+          <p>Universidad Privada Domingo Savio</p>
+        </div>
+      </div>
+    </section>
 
-  <h2>Preguntas a Resolver</h2>
+    <section class="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        Esta página demuestra la diferencia entre HTML puro y HTML con CSS.
+        Aquí se aplican estilos visuales para mejorar la presentación, la organización y la experiencia del usuario.
+      </p>
+    </section>
 
-  <h3>1. ¿A qué se denomina Multimedia, hipermedia e hipertexto?</h3>
-  <p>Multimedia combina texto, imagen, audio y video. 
-  Hipermedia integra varios medios conectados por enlaces interactivos. 
-  Hipertexto es un texto con enlaces que permiten navegar entre diferentes secciones o documentos.</p>
+    <section class="preguntas">
+      <h2>Preguntas a Resolver</h2>
 
-  <h3>2. ¿Qué es una página web y qué editores se usan para crearla?</h3>
-  <p>Una página web es un documento digital que se visualiza mediante un navegador. 
-  Se puede crear con HTML y CSS, usando editores como Visual Studio Code, Sublime Text o Notepad++.</p>
+      <div class="pregunta">
+        <strong>¿A qué se denomina Multimedia, hipermedia e hipertexto?</strong>
+        <p>Multimedia combina texto, imagen, audio y video. Hipermedia conecta varios medios mediante enlaces interactivos. Hipertexto es texto con enlaces que permiten saltar entre páginas o secciones.</p>
+      </div>
 
-  <h3>3. ¿Qué significa HTML y para qué se utiliza?</h3>
-  <p>HTML (HyperText Markup Language) es el lenguaje que estructura el contenido de una página web.</p>
+      <div class="pregunta">
+        <strong>¿Qué es una página web y qué editores se usan para crearla?</strong>
+        <p>Una página web es un documento digital que se visualiza en un navegador. Se crea con HTML y CSS, usando editores como Visual Studio Code, Sublime Text o Notepad++.</p>
+      </div>
 
-  <h3>4. ¿Qué etiquetas marcan el inicio y final de un documento HTML?</h3>
-  <p>El documento inicia con <code>&lt;html&gt;</code> y termina con <code>&lt;/html&gt;</code>.</p>
+      <div class="pregunta">
+        <strong>¿Qué significa HTML y para qué se utiliza?</strong>
+        <p>HTML (HyperText Markup Language) estructura el contenido de las páginas web.</p>
+      </div>
 
-  <h3>5. ¿Qué indican las etiquetas &lt;body&gt; y &lt;/body&gt;?</h3>
-  <p>Encierran todo el contenido visible de la página, como texto, imágenes y tablas.</p>
+      <div class="pregunta">
+        <strong>¿Qué etiquetas marcan el inicio y final de un documento HTML?</strong>
+        <p>Comienza con <code>&lt;html&gt;</code> y termina con <code>&lt;/html&gt;</code>.</p>
+      </div>
 
-  <h3>6. ¿Cuáles etiquetas se declaran dentro de &lt;head&gt;?</h3>
-  <p>Se incluyen <code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code> y <code>&lt;style&gt;</code>.</p>
+      <div class="pregunta">
+        <strong>¿Qué indican las etiquetas &lt;body&gt; y &lt;/body&gt;?</strong>
+        <p>Contienen todo el contenido visible de la página, como texto, imágenes y tablas.</p>
+      </div>
 
-  <h3>7. ¿Cuáles son las etiquetas de los atributos de texto?</h3>
-  <p><code>&lt;b&gt;</code> (negrita), <code>&lt;i&gt;</code> (cursiva), <code>&lt;u&gt;</code> (subrayado), <code>&lt;mark&gt;</code> (resaltado).</p>
+      <div class="pregunta">
+        <strong>¿Cuáles etiquetas se declaran dentro de &lt;head&gt;?</strong>
+        <p><code>&lt;title&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;link&gt;</code> y <code>&lt;style&gt;</code>.</p>
+      </div>
 
-  <h3>8. ¿Cuál es la etiqueta que participa como parámetro en otras etiquetas?</h3>
-  <p><code>&lt;img&gt;</code> o <code>&lt;a&gt;</code> utilizan atributos como <code>src</code> y <code>href</code> para enlazar recursos.</p>
+      <div class="pregunta">
+        <strong>¿Cuáles son las etiquetas de los atributos de texto?</strong>
+        <p><code>&lt;b&gt;</code> (negrita), <code>&lt;i&gt;</code> (cursiva), <code>&lt;u&gt;</code> (subrayado), <code>&lt;mark&gt;</code> (resaltado).</p>
+      </div>
 
-  <h3>9. ¿Cuáles son las formas de utilizar las etiquetas de listas?</h3>
-  <ul>
-    <li><code>&lt;ul&gt;</code>: lista no ordenada</li>
-    <li><code>&lt;ol&gt;</code>: lista ordenada</li>
-    <li><code>&lt;li&gt;</code>: elemento de la lista</li>
-  </ul>
+      <div class="pregunta">
+        <strong>¿Cuál es la etiqueta que participa como parámetro en otras etiquetas?</strong>
+        <p><code>&lt;img&gt;</code> o <code>&lt;a&gt;</code> utilizan atributos como <code>src</code> y <code>href</code>.</p>
+      </div>
 
-  <h3>10. ¿Cuál sería la forma de colocar un color de fondo?</h3>
-  <p>Con CSS: <code>body { background-color: lightgreen; }</code></p>
+      <div class="pregunta">
+        <strong>¿Cuáles son las formas de utilizar las etiquetas de listas?</strong>
+        <ul>
+          <li><code>&lt;ul&gt;</code>: lista no ordenada</li>
+          <li><code>&lt;ol&gt;</code>: lista ordenada</li>
+          <li><code>&lt;li&gt;</code>: elemento de la lista</li>
+        </ul>
+      </div>
 
-  <h3>11. ¿Para qué se utiliza la etiqueta &lt;font&gt;?</h3>
-  <p>Se usaba para cambiar color y tamaño de texto, pero hoy se reemplaza con propiedades CSS como <code>color</code> y <code>font-family</code>.</p>
+      <div class="pregunta">
+        <strong>¿Cuál sería la forma de colocar un color de fondo?</strong>
+        <p>Con CSS: <code>body { background-color: lightgreen; }</code></p>
+      </div>
 
-  <h3>12. ¿Qué diferencia hay entre &lt;p&gt; y &lt;div&gt;?</h3>
-  <p><code>&lt;p&gt;</code> define un párrafo, mientras que <code>&lt;div&gt;</code> agrupa elementos para organizar el diseño.</p>
+      <div class="pregunta">
+        <strong>¿Para qué se utiliza la etiqueta &lt;font&gt;?</strong>
+        <p>Antes se usaba para cambiar color y tamaño del texto, hoy se reemplaza con CSS (<code>color</code> y <code>font-family</code>).</p>
+      </div>
 
-  <h3>13. ¿Cuál es la estructura básica de un código HTML?</h3>
-  <pre>
+      <div class="pregunta">
+        <strong>¿Qué diferencia hay entre &lt;p&gt; y &lt;div&gt;?</strong>
+        <p><code>&lt;p&gt;</code> crea párrafos, <code>&lt;div&gt;</code> agrupa elementos para organizar el diseño.</p>
+      </div>
+
+      <div class="pregunta">
+        <strong>¿Cuál es la estructura básica de un código HTML?</strong>
+        <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -80,17 +123,19 @@
     Contenido visible
   &lt;/body&gt;
 &lt;/html&gt;
-  </pre>
+        </pre>
+      </div>
 
-  <h3>14. ¿Cuáles son las etiquetas de encabezado?</h3>
-  <p>Van de <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, de mayor a menor jerarquía.</p>
+      <div class="pregunta">
+        <strong>¿Cuáles son las etiquetas de encabezado?</strong>
+        <p><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> son títulos jerárquicos. Ejemplo: <code>&lt;h1&gt;Fabricio Andrés Zeballos Leigue&lt;/h1&gt;</code></p>
+      </div>
+    </section>
+  </main>
 
-  <hr>
-  <p><strong>Autores:</strong> Fabricio Andrés Zeballos Leigue y Noelia García Cajaerico</p>
-  <p><strong>Fecha:</strong> 2025</p>
-  <p>© Todos los derechos reservados</p>
+  <footer>
+    <p>© 2025 — Exposición sobre HTML y CSS — Fabricio Andrés Zeballos Leigue y Noelia García Cajaerico</p>
+  </footer>
 
 </body>
 </html>
-
-
